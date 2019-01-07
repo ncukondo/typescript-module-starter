@@ -19,7 +19,7 @@ git clone --depth=1 git@github.com:ncukondo/typescript-module-starter.git <proje
 or
 
 ```
-hub clone @ncukondo/typescript-module-starter <project_name>
+hub clone ncukondo/typescript-module-starter <project_name>
 ```
 
 ### Install dependencies
