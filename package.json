@@ -3,6 +3,7 @@
   "version": "0.1.4",
   "description": "",
   "main": "./built/index.js",
+  "types": "./built/index.d.js",
   "scripts": {
     "lint": "tslint --fix src/**/*.ts",
     "test": "jest",
