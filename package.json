@@ -5,6 +5,7 @@
   "main": "./built/index.js",
   "types": "./built/index.d.js",
   "scripts": {
+    "_preinstall": "ln -s ../node_modules node_modules",
     "lint": "tslint --fix src/**/*.ts",
     "test": "yarn jest -i",
     "copy-to-dist": "cpx src/*.html dist",
