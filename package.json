@@ -5,7 +5,7 @@
   "main": "./built/index.js",
   "types": "./built/index.d.js",
   "scripts": {
-    "_preinstall": "ln -s ../node_modules node_modules",
+    "// preinstall": "ln -s ../node_modules node_modules",
     "lint": "tslint --fix src/**/*.ts",
     "test": "yarn jest -i",
     "copy-to-dist": "cpx src/*.html dist",
@@ -15,6 +15,8 @@
     "clean-dist": "rimraf dist",
     "build-dev": "yarn clean-dist &&  yarn copy-to-dist && webpack --config webpack.dev.config.js",
     "build": "yarn clean && yarn tsc -p ./tsconfig.module.json",
+    "git": "git add . && git commit -m",
+    "postgit": "git push origin master",
     "prepublish": "yarn test && yarn build"
   },
   "keywords": [
